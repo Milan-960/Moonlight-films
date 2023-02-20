@@ -1,3 +1,7 @@
+## what this app will have
+
+This app is about movie with using the movie database API. it will allow user to create an account and they also will be able to put commnets on in review section on the movie app. As well it it will allow user to stream movie online and can download the app.
+
 # Moonlight Films
 
 Hot TV Show / Movie Watching Website
