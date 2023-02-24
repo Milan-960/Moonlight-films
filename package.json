@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@firebase/auth": "^0.21.3",
+    "@formkit/auto-animate": "^1.0.0-beta.6",
     "@reduxjs/toolkit": "^1.9.3",
     "@tanstack/react-query": "^4.24.10",
     "@testing-library/jest-dom": "^5.16.5",
