@@ -1,3 +1,10 @@
+import { Cast } from "./Cast-types";
+import { DetailTV } from "@custom-types/DetailTV-types";
+import { DetailMovie } from "@custom-types/DetailMovie-types";
+import { Reviews } from "./Reviews-types";
+import { Video } from "./Video-types";
+import { DetailSeason } from "./DetailsSeason-types";
+
 export interface Item {
   poster_path: string;
   overview: string;
@@ -27,4 +34,22 @@ export interface Item {
 
   // Person
   profile_path?: string;
+}
+
+export interface ConfigType {
+  [key: string]: string | number;
+}
+
+export interface FilmInfo {
+  detail?: DetailMovie | DetailTV | undefined;
+  credits?: Cast[] | undefined;
+  reviews?: Reviews[] | undefined;
+  similar?: Item[] | undefined;
+  videos?: Video[] | undefined;
+}
+
+export interface getWatchReturnedType {
+  detail?: DetailTV | DetailMovie | undefined;
+  recommendations?: Item[] | undefined;
+  detailSeasons?: DetailSeason[] | undefined;
 }
