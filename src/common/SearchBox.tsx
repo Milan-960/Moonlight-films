@@ -1,7 +1,7 @@
 import { FC, FormEvent, useEffect, useRef, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
-import { getSearchKeyword } from "../../services/search";
+import { getSearchKeyword } from "@services/search";
 
 interface SearchBoxProps {
   autoFocus?: boolean;

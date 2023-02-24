@@ -11,13 +11,23 @@ import { getFirestore } from "firebase/firestore";
 //   appId: process.env.REACT_APP_appId,
 // });
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBMgU74V10ev-PNOeYR_I94GWP3Q7dNVAU",
+//   authDomain: "web-server-183311.firebaseapp.com",
+//   projectId: "web-server-183311",
+//   storageBucket: "web-server-183311.appspot.com",
+//   messagingSenderId: "558395013527",
+//   appId: "1:558395013527:web:c7c941fd5954798cc16cd2",
+// };
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBMgU74V10ev-PNOeYR_I94GWP3Q7dNVAU",
-  authDomain: "web-server-183311.firebaseapp.com",
-  projectId: "web-server-183311",
-  storageBucket: "web-server-183311.appspot.com",
-  messagingSenderId: "558395013527",
-  appId: "1:558395013527:web:c7c941fd5954798cc16cd2",
+  apiKey: "AIzaSyBRrmSoZJ6f8wMnAahFZtjnUFWIPXvfZtU",
+  authDomain: "moonlight-movie.firebaseapp.com",
+  projectId: "moonlight-movie",
+  storageBucket: "moonlight-movie.appspot.com",
+  messagingSenderId: "24438338141",
+  appId: "1:24438338141:web:4e936572063d1bef6713b4",
+  measurementId: "G-6DGB7R41T2",
 };
 
 // const firebaseConfig = {
