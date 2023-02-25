@@ -2,8 +2,8 @@ import axios from "@shared/axios";
 import { Item } from "@custom-types/Item-types";
 import { HomeFilms } from "@custom-types/MainHome-FilmsProps";
 
-// MOVIE TAB
-///////////////////////////////////////////////////////////////
+// This is a MOVIE TAB
+
 export const getHomeMovies = async (): Promise<HomeFilms> => {
   const endpoints: { [key: string]: string } = {
     Trending: "/trending/movie/day",

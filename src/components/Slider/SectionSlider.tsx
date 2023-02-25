@@ -1,10 +1,10 @@
 import { FC } from "react";
 import { Navigation } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import { Item } from "@custom-types/Item-types";
 
-// import FilmItem from "../Common/FilmItem";
+import FilmItem from "@common/FilmItem";
 import Skeleton from "@common/Skeleton";
 
 interface SectionSliderProps {
@@ -26,7 +26,7 @@ const SectionSlider: FC<SectionSliderProps> = ({ films }) => {
       >
         {films?.map((film) => (
           <SwiperSlide key={film.id} className="!w-[175px]">
-            {/* <FilmItem item={film} /> */}
+            <FilmItem item={film} />
           </SwiperSlide>
         )) || (
           <>

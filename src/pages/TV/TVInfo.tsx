@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
-import FilmDetail from "../../components/FilmDetail/FilmDetail";
-import { getTVFullDetail } from "../../services/tv";
 
+import FilmDetail from "@components/FilmDetail/FilmDetail";
+import { getTVFullDetail } from "@services/tv";
 import { FilmInfo } from "@custom-types/Item-types";
 import Error from "@error/Error";
 

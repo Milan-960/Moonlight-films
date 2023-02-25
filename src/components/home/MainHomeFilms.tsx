@@ -36,7 +36,7 @@ const MainHomeFilms: FC<MainHomeFilmsProps> = ({
             .filter((section) => section[0] !== "Trending")
             .map((section, index) => (
               <li key={index}>
-                <h2 className="text-xl text-white font-medium tracking-wider mb-3">
+                <h2 className="text-xl text-white font-medium tracking-wider mb-3 text-left">
                   {section[0]}
                 </h2>
 

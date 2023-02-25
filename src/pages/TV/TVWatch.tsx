@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { FC } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
-import FilmWatch from "../../components/FilmWatch/FilmWatch";
+import FilmWatch from "@components/FilmWatch/FilmWatch";
 import { getWatchTV } from "../../services/tv";
 
 import { getWatchReturnedType } from "@custom-types/Item-types";
