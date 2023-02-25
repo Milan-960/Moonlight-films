@@ -3,7 +3,7 @@ import { FC } from "react";
 import { useParams } from "react-router-dom";
 
 import FilmWatch from "@components/FilmWatch/FilmWatch";
-import { getWatchMovie } from "../../services/movie";
+import { getWatchMovie } from "@services/movie";
 import { getWatchReturnedType } from "@custom-types/Item-types";
 import Error from "@error/Error";
 

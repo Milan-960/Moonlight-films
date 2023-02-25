@@ -1,10 +1,10 @@
 import "./App.css";
-import { Home } from "@pages/home-page";
+import RoutesPath from "@routes/Routes";
 
 const App = () => {
   return (
     <div className="App">
-      <Home />
+      <RoutesPath />
     </div>
   );
 };

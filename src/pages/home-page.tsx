@@ -12,6 +12,8 @@ import MainHomeFilms from "@components/home/MainHomeFilms";
 import RecommendGenres from "@components/home/RecommendGenres";
 import TrendingNow from "@components/home/TrendingNow";
 
+import Footer from "@components/Footer/Footer";
+
 import {
   getHomeMovies,
   getHomeTVs,
@@ -21,7 +23,7 @@ import {
 
 import { Item } from "@custom-types/Item-types";
 import { HomeFilms } from "@custom-types/MainHome-FilmsProps";
-import { useAppSelector } from "../store/hooks";
+import { useAppSelector } from "@store/hooks";
 
 export const Home: FC = () => {
   const currentUser = useAppSelector((state) => state.auth.user);
@@ -76,7 +78,7 @@ export const Home: FC = () => {
 
   return (
     <>
-      <Title value="Top Movie| Watching Movie" />
+      <Title value="Top Movie | Watching Movie" />
 
       <div className="flex md:hidden justify-between items-center px-5 my-5">
         <Link to="/" className="flex gap-2 items-center">
@@ -170,6 +172,8 @@ export const Home: FC = () => {
           <TrendingNow />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
