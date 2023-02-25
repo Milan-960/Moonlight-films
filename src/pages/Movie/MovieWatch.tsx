@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { FC } from "react";
 import { useParams } from "react-router-dom";
-// import FilmWatch from "../../components/FilmWatch/FilmWatch";
+
+import FilmWatch from "@components/FilmWatch/FilmWatch";
 import { getWatchMovie } from "../../services/movie";
 import { getWatchReturnedType } from "@custom-types/Item-types";
-
 import Error from "@error/Error";
 
 const MovieWatch: FC = () => {
@@ -19,11 +19,7 @@ const MovieWatch: FC = () => {
 
   // if (!data) return <div>Loading...</div>;
 
-  return (
-    <div>
-      <h1>Movie Watch</h1>
-    </div>
-  );
+  return <FilmWatch {...data} media_type="movie" />;
 };
 
 export default MovieWatch;
