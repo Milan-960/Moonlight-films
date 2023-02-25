@@ -9,7 +9,7 @@ import Sidebar from "@common/Sidebar";
 import SidebarMini from "@common/SidebarMini";
 import Title from "@common/Title";
 
-import ExploreFilter from "@components/Explore/ExploreFilter";
+import ExploreFilter from "../components/Explore/ExploreFilter";
 import ExploreResult from "@components/Explore/ExploreResult";
 
 import { useCurrentViewportView } from "@hooks/useCurrentViewportView";
@@ -56,18 +56,6 @@ const Explore: FunctionComponent<ExploreProps> = () => {
   const [config, setConfig] = useState<ConfigType>({});
 
   useEffect(() => {
-    // const changeConfig = (key: string, value: string) => {
-    //   const clone = JSON.parse(JSON.stringify(config));
-    //   clone[key] = value;
-    //   setConfig(clone);
-    // };
-
-    // setConfig((prevConfig) => ({
-    //   ...prevConfig,
-    //   sort_by: sortType,
-    //   with_genres: genreType.toString(),
-    // }));
-
     const changeConfig = (key: string, value: string | number) => {
       setConfig((prevConfig) => ({
         ...prevConfig,
@@ -195,17 +183,3 @@ const Explore: FunctionComponent<ExploreProps> = () => {
 };
 
 export default Explore;
-
-// const [config, setConfig] = useState<{ [key: string]: string }>(
-//   JSON.parse(localStorage.getItem("config") || "{}")
-// );
-
-// const changeConfig = (key: string, value: string) => {
-//   const clone = JSON.parse(JSON.stringify(config));
-//   clone[key] = value;
-//   setConfig(clone);
-// };
-
-// useEffect(() => {
-//   localStorage.setItem("config", JSON.stringify(config));
-// }, [config]);
