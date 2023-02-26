@@ -17,7 +17,7 @@ const Error: FunctionComponent<ErrorProps> = () => {
           className="fixed top-0 left-0 min-h-screen min-w-full -z-10 object-cover"
         >
           <source
-            src=""
+            src="https://raw.githubusercontent.com/milan-960/Moonlight-films/develop/Videos/ProjectKapwing.mp4"
             type="video/mp4"
           />
         </video>
