@@ -17,7 +17,7 @@ const Error: FunctionComponent<ErrorProps> = () => {
           className="fixed top-0 left-0 min-h-screen min-w-full -z-10 object-cover"
         >
           <source
-            src="https://raw.githubusercontent.com/fuocy/video/master/Studio%20Project%20%E2%80%94%20Kapwing.mp4"
+            src=""
             type="video/mp4"
           />
         </video>
