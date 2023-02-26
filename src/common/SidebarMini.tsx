@@ -41,7 +41,7 @@ const SidebarMini: FunctionComponent = () => {
             alt="Logo"
             src="/logo.png"
             effect="opacity"
-            className="w-10 h-10"
+            className="w-10 h-10 rounded-full"
           />
         </Link>
         <div className="flex flex-col gap-7">
