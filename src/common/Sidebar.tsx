@@ -76,8 +76,8 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
       )}
 
       <div
-        className={`shrink-0 md:max-w-[260px] w-[70vw] pl-8 top-0 pt-10  
-        md:sticky md:translate-x-0 md:bg-transparent md:shadow-none
+        className={`shrink-0 md:max-w-[260px] w-[70vw]  top-0 pt-10  
+        md:sticky md:translate-x-0 md:bg-transparent md:shadow-none flex flex-wrap flex-col content-center
     
       -translate-x-full fixed h-screen shadow-md transition duration-300 bg-dark-lighten z-50 ${
         isSidebarActive && "translate-x-0"
@@ -89,7 +89,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
               alt="Logo"
               src="/logo.png"
               effect="opacity"
-              className="w-10 h-10"
+              className="w-10 h-10 rounded-full"
             />
             <h1 className="text-xl text-white tracking-widest font-semibold uppercase">
               <span>Top</span>
