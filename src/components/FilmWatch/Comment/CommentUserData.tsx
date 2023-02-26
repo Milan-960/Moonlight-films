@@ -1,9 +1,7 @@
 import { DocumentData, QuerySnapshot } from "firebase/firestore";
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent } from "react";
 import Skeleton from "@common/Skeleton";
 import CommentUserContent from "./CommentUserContent";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
 
 interface CommentUserDataProps {
   id?: number | string;
