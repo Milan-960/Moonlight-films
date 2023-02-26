@@ -22,7 +22,7 @@ const Auth: FunctionComponent<AuthProps> = () => {
           className="fixed md:-top-[130px] -top-[155px] object-cover left-0 h-[135vh] w-full -z-10"
         >
           <source
-            src="https://raw.githubusercontent.com/fuocy/video/master/endgame.mp4"
+            src="https://raw.githubusercontent.com/milan-960/Moonlight-films/develop/Videos/endgame.mp4"
             type="video/mp4"
           />
         </video>
