@@ -1,11 +1,18 @@
 import "./App.css";
-import RoutesPath from "@routes/Routes";
+import { Suspense } from "react";
+
+import BaseRoutes from "@routes/Routes";
+import Preloader from "@components/Preloader/Preloader";
 
 const App = () => {
   return (
-    <div className="App">
-      <RoutesPath />
-    </div>
+    <>
+      <div className="App">
+        <Suspense fallback={<Preloader />}>
+          <BaseRoutes />
+        </Suspense>
+      </div>
+    </>
   );
 };
 

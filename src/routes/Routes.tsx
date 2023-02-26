@@ -1,28 +1,49 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { doc, onSnapshot } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
-import Protected from "@common/Protected";
-
-import Auth from "@pages/Auth";
-import Bookmarked from "@pages/Bookmarked";
-
-import Error from "@pages/Error";
-import Explore from "@pages/Explore";
-import History from "@pages/History";
-import { Home } from "@pages/home-page";
-import MovieInfo from "@pages/Movie/MovieInfo";
-import MovieWatch from "@pages/Movie/MovieWatch";
-import Profile from "@pages/Profile";
-import Search from "@pages/Search";
-import TVInfo from "@pages/TV/TVInfo";
-import TVWatch from "@pages/TV/TVWatch";
 import { auth, db } from "@shared/firebase";
+
 import { useAppDispatch } from "@store/hooks";
 import { setCurrentUser } from "@store/slice/authSlice";
 
-const RoutesPath = () => {
+// This is the first way
+const Home = lazy(async () => ({
+  default: (await import("@pages/home-page")).Home,
+}));
+
+const Explore = lazy(() => DelayForDemo(import("@pages/Explore")));
+const History = lazy(() => DelayForDemo(import("@pages/History")));
+const MovieWatch = lazy(() => DelayForDemo(import("@pages/Movie/MovieWatch")));
+const MovieInfo = lazy(() => DelayForDemo(import("@pages/Movie/MovieInfo")));
+const Profile = lazy(() => DelayForDemo(import("@pages/Profile")));
+
+const Protected = lazy(() => DelayForDemo(import("@common/Protected")));
+
+const Auth = lazy(() => DelayForDemo(import("@pages/Auth")));
+const Bookmarked = lazy(() => DelayForDemo(import("@pages/Bookmarked")));
+
+const Error = lazy(() => DelayForDemo(import("@pages/Error")));
+const Search = lazy(() => DelayForDemo(import("@pages/Search")));
+const TVInfo = lazy(() => DelayForDemo(import("@pages/TV/TVInfo")));
+const TVWatch = lazy(() => DelayForDemo(import("@pages/TV/TVWatch")));
+
+// Add a fixed delay so you can see the loading state
+async function DelayForDemo(promise: any) {
+  await new Promise((resolve) => {
+    setTimeout(resolve, 1000);
+  });
+  return promise;
+}
+
+// 2nd mathod
+// const Home = lazy(async () => {
+//   await new Promise((resolve) => setTimeout(resolve, 1000));
+//   return await import("@pages/home-page");
+// });
+
+const BaseRoutes = () => {
   const location = useLocation();
   const dispatch = useAppDispatch();
   // const currentUser = useAppSelector((state) => state.auth.user);
@@ -127,4 +148,4 @@ const RoutesPath = () => {
   );
 };
 
-export default RoutesPath;
+export default BaseRoutes;
