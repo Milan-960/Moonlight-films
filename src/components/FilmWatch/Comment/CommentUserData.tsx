@@ -1,7 +1,10 @@
 import { DocumentData, QuerySnapshot } from "firebase/firestore";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import Skeleton from "@common/Skeleton";
 import CommentUserContent from "./CommentUserContent";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+
 interface CommentUserDataProps {
   id?: number | string;
   media_type: string;
@@ -41,7 +44,7 @@ const CommentUserData: FunctionComponent<CommentUserDataProps> = ({
   return (
     <>
       {isError ? (
-        <p className="text-red-500 text-lg text-center mb-6">
+        <p className="text-red-500 text-lg text-center">
           ERROR: Loading comment failed. Your free service exceeded the
           limitation already.
         </p>
