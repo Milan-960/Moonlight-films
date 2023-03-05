@@ -7,6 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { useAppSelector } from "@store/hooks";
+import { SEO } from "@seo/Seo";
 
 const SidebarMini: FunctionComponent = () => {
   const location = useLocation();
@@ -34,6 +35,14 @@ const SidebarMini: FunctionComponent = () => {
   return (
     <>
       <ToastContainer />
+
+      <SEO
+        title="explore | Moonlight"
+        description="explore | Moonlight films"
+        name="explore"
+        type="article"
+        img=""
+      />
 
       <div className="shrink-0 max-w-[80px] w-full py-8 flex flex-col items-center justify-between h-screen sticky top-0">
         <Link to="/">

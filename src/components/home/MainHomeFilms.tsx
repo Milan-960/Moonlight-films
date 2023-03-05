@@ -6,6 +6,7 @@ import Skeleton from "@common/Skeleton";
 
 import BannerSlider from "../Slider/BannerSlider";
 import SectionSlider from "../Slider/SectionSlider";
+import { SEO } from "@seo/Seo";
 
 const MainHomeFilms: FC<MainHomeFilmsProps> = ({
   data,
@@ -19,6 +20,14 @@ const MainHomeFilms: FC<MainHomeFilmsProps> = ({
         films={data?.Trending}
         dataDetail={dataDetail}
         isLoadingBanner={isLoadingBanner}
+      />
+
+      <SEO
+        title="Profile | Moonlight"
+        description="Profile | Moonlight films"
+        name="Profile"
+        type="article"
+        img="/logo.png"
       />
 
       <ul className="flex flex-col gap-10 mt-12">
