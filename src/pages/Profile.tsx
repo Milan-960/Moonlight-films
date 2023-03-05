@@ -26,6 +26,8 @@ import ProfileImage from "@components/Profile/ProfileImage";
 import { auth } from "@shared/firebase";
 import { convertErrorCodeToMessage } from "@shared/utils";
 
+import { SEO } from "@seo/Seo";
+
 interface ProfileProps {}
 
 const Profile: FunctionComponent<ProfileProps> = () => {
@@ -182,6 +184,14 @@ const Profile: FunctionComponent<ProfileProps> = () => {
   return (
     <>
       <Title value="Profile | Moonlight" />
+
+      <SEO
+        title="Profile | Moonlight"
+        description="Profile | Moonlight films"
+        name="Profile"
+        type="article"
+        img="/logo.png"
+      />
 
       <ToastContainer />
 
