@@ -12,6 +12,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { useCurrentViewportView } from "@hooks/useCurrentViewportView";
 import { auth } from "@shared/firebase";
 import { useAppSelector } from "@store/hooks";
+import { SEO } from "@seo/Seo";
 
 interface SidebarProps {
   isSidebarActive: boolean;
@@ -68,6 +69,14 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
   return (
     <>
       <ToastContainer />
+
+      <SEO
+        title="MENU | Moonlight"
+        description="MENU | Moonlight films"
+        name="MENU"
+        type="article"
+        img=""
+      />
 
       {isLoading && (
         <div className="z-10 tw-flex-center fixed top-0 left-0 w-full h-full">

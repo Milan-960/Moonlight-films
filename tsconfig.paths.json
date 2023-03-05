@@ -11,7 +11,8 @@
       "@shared/*": ["./shared/*"],
       "@store/*": ["./store/*"],
       "@routes/*": ["./routes/*"],
-      "@error/*": ["./error/*"]
+      "@error/*": ["./error/*"],
+      "@seo/*": ["./seo/*"]
     }
   }
 }
