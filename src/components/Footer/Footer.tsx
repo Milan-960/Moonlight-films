@@ -1,5 +1,3 @@
-import { SEO } from "@seo/Seo";
-
 import { FunctionComponent } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { GiSpiderWeb } from "react-icons/gi";
@@ -12,14 +10,6 @@ const Footer: FunctionComponent<FooterProps> = () => {
 
   return (
     <div className="bg-dark-lighten text-white flex justify-between items-center py-3 px-4 shadow-md mt-3">
-      <SEO
-        title="Milan Sachani | Moonlight"
-        description="Milan Sachani | Moonlight films"
-        name="Milan Sachani"
-        type="article"
-        img=""
-      />
-
       <p className="flex gap-2">
         <span className="hidden md:block"> Milan_Sachani &copy; {year}</span>
       </p>
