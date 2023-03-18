@@ -1,5 +1,25 @@
 # Live demo 🔥 [LIVE](https://moonlight-film.vercel.app/)
 
+# How to start the Project!
+
+### Clone the repo in your mashine!
+
+```
+git clone https://github.com/Milan-960/Moonlight-films.git
+```
+
+### install the dependaciy
+
+```
+npm install
+```
+
+### Run on the dev server
+
+```
+npm start
+```
+
 ## what this app will have
 
 This app is about movie with using the movie database API. it will allow user to create an account and they also will be able to put commnets on in review section on the movie app. As well it it will allow user to stream movie online and can download the app.
@@ -52,3 +72,7 @@ The Movie Database [API](https://www.themoviedb.org/documentation/api)
 ![Screenshot 8](https://i.ibb.co/5BhLp4x/auth.png)
 
 ![Screenshot 9](https://i.ibb.co/LrYHgCF/mobile.png)
+
+```
+
+```
