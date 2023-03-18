@@ -2,13 +2,13 @@
 
 # How to start the Project!
 
-### Clone the repo in your mashine!
+### Clone the repo in your machine!
 
 ```
 git clone https://github.com/Milan-960/Moonlight-films.git
 ```
 
-### install the dependaciy
+### install the dependency
 
 ```
 npm install
