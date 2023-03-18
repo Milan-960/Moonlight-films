@@ -20,6 +20,20 @@ npm install
 npm start
 ```
 
+## To be able to watch the movies you would need to have your API
+
+```
+REACT_APP_API_KEY=MOVIE API
+
+REACT_APP_FB_API_KEY=FIREBASE API KEY
+REACT_APP_FB_AUTH_DOMAIN=FIREBASE AUTH_DOMAIN KEY
+REACT_APP_FB_PROJECT_Id=FIREBASE PROJECT_Id KEY
+REACT_APP_FB_STORAGE_BUCKET=FIREBASE STORAGE_BUCKE KEY
+REACT_APP_FB_MESSAGING_SENDER_ID=FIREBASE MESSAGING_SENDER_I KEY
+REACT_APP_FB_APP_ID=FIREBASE APP_ID KEY
+REACT_APP_FB_MEASUREMENT_ID=FIREBASE MEASUREMENT_ID KEY
+```
+
 ## what this app will have
 
 This app is about movie with using the movie database API. it will allow user to create an account and they also will be able to put commnets on in review section on the movie app. As well it it will allow user to stream movie online and can download the app.
