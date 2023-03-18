@@ -20,7 +20,7 @@ npm install
 npm start
 ```
 
-## To be able to watch the movies you would need to have your API
+## To be able to watch the movies you would need to have your API in .env
 
 ```
 REACT_APP_API_KEY=MOVIE API
