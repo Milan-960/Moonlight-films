@@ -14,10 +14,7 @@ const MovieWatch: FC = () => {
     () => getWatchMovie(Number(id as string))
   );
 
-  // if (error) return <div>ERROR: {error.message}</div>;
   if (error) return <Error />;
-
-  // if (!data) return <div>Loading...</div>;
 
   return <FilmWatch {...data} media_type="movie" />;
 };

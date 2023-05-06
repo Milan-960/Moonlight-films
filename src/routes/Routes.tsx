@@ -13,6 +13,14 @@ const Home = lazy(async () => ({
   default: (await import("@pages/home-page")).Home,
 }));
 
+// Add a fixed delay so you can see the loading state
+async function DelayForDemo(promise: any) {
+  await new Promise((resolve) => {
+    setTimeout(resolve, 1000);
+  });
+  return promise;
+}
+
 const Explore = lazy(() => DelayForDemo(import("@pages/Explore")));
 const History = lazy(() => DelayForDemo(import("@pages/History")));
 const MovieWatch = lazy(() => DelayForDemo(import("@pages/Movie/MovieWatch")));
@@ -28,14 +36,6 @@ const Error = lazy(() => DelayForDemo(import("@pages/Error")));
 const Search = lazy(() => DelayForDemo(import("@pages/Search")));
 const TVInfo = lazy(() => DelayForDemo(import("@pages/TV/TVInfo")));
 const TVWatch = lazy(() => DelayForDemo(import("@pages/TV/TVWatch")));
-
-// Add a fixed delay so you can see the loading state
-async function DelayForDemo(promise: any) {
-  await new Promise((resolve) => {
-    setTimeout(resolve, 1000);
-  });
-  return promise;
-}
 
 // 2nd mathod
 // const Home = lazy(async () => {

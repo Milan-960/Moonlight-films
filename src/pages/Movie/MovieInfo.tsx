@@ -8,14 +8,11 @@ import Error from "@error/Error";
 
 const MovieInfo: FC = () => {
   const { id } = useParams();
-  const { data, isError, error } = useQuery<FilmInfo, Error>(
-    ["movieDetail", id],
-    () => getMovieFullDetail(Number(id as string))
+  const { data, isError } = useQuery<FilmInfo, Error>(["movieDetail", id], () =>
+    getMovieFullDetail(Number(id as string))
   );
 
-  // if (isError) return <div>ERROR: {error.message}</div>;
   if (isError) return <Error />;
-  // if (isLoading) return <div>Loading...</div>;
 
   return <FilmDetail {...data} />;
 };
